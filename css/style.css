@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.card-holder {
+    width: 850px;
+    height: 650px;
+    background: #96aae5;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+/* created a div to hold the text so that i could manipulate both margins
+without getting caught up trying to do positioning with absolutes and relatives */
+.card-holder-text {
+    margin: 45px 0px 0px 160px;
+}
+
+.card-day,
+.card-date {
+    color: #fdfdfd;
+    font-weight: 100;
+}
+
+.card-day {
+    text-transform: uppercase;
+}
+
+
+/* holds the main card and content */
+.card-wrapper {
+    width: 600px;
+    height: 400px;
+    background: #fdfdfd;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 2px 8px 16px 15px #60658180; 
+    box-shadow: 2px 8px 16px 15px #60658180;
+    /* applying overflow to the wrapper that HOLDS the img covered up 
+    her arms that peeked over */
+    overflow: hidden;
+}
+
+/* CARD TOP */
+
+.card-header {
+    color: #96aae5;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.card-arrow {
+    filter: invert(73%) sepia(6%) saturate(2603%) hue-rotate(190deg) brightness(93%) contrast(92%);
+    /* honestly that bottom workaround was a miracle, idk fam */
+    vertical-align: text-bottom;
+    font-weight:100;
+}
+
+.card-exercise {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 900;
+    text-shadow: 5px 6px 10px rgb(150, 170, 229, .5);
+    vertical-align: middle;
+    margin: 0px 50px;
+    letter-spacing: 2px;;
+    /* z-index: -2;
+    position: relative; */
+}
+
+.card-hero {
+    position: absolute;
+    z-index: -1;
+    left: -40px;
+    top: -8px;
+}
+
+
+/* CARD MIDDLE */
+
+.card-middle {
+    position: absolute;
+    right: 90px;
+}
+
+.card-middle-top,
+.card-middle-bottom {
+    margin: 5px 0px;
+}
+
+.card-sub-title {
+    text-transform: uppercase;
+    color: #60658180;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+
+.card-mid-text {
+    color: #606581;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.card-space-mid {
+    margin-top: 35px;
+}
+
+.card-bottom-span {
+    margin-right: 65px;
+}
+
+.card-icon {
+    filter: invert(73%) sepia(6%) saturate(2603%) hue-rotate(190deg) brightness(93%) contrast(92%);
+    padding: 0px 10px;
+}
+
+
+/* CARD BOTTOM */
+.card-bottom-nav {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* chitchat with anthony */
+/* .card-nav-word::before {
+    border-bottom: 3px solid #606581;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+} */
+
+.card-nav-word {
+    text-decoration: none;
+    color: #96aae590;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0px 10px 0px 20px
+}
+
+.card-nav-word:hover {
+    color: #96aae5;
+    border-bottom: 6px solid #606581;
+    padding-bottom: 17px;
+}
